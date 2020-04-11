@@ -3,44 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selector and Pseudo Selcetors</title>
+    <title>Media Queries</title>
     <style>
-  
-
-      .container > .box {
-        background-color: yellow;
-      }
-      .box{
-        border: 1px solid yellow;
-      }
-   
-      .box {
+      body {
         background-color: green;
-        height: 100px;
-        display: block;
-        border: 1px solid black;
       }
-    
-      .insiderbox{
-        width: 100px;
-        height: 100px;
-        background-color: purple; 
-        border: 2px solid black;
-     
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        body {
+          background-color: blue;
+        }
       }
-    
-
     </style>
   </head>
-  <body>
-    <div class="container">
-      <div class="box">
-        <div class="insiderbox"></div>
-      </div>
-      <div class="box"></div>      
-      <div class="box"></div>
-      <div class="box"><input type="password" required="required">
-      <input type="submit" required="required">
-    </div>
-  </body>
+  <body></body>
 </html>
